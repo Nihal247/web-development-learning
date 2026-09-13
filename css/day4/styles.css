@@ -1,0 +1,14 @@
+*{
+box-sizing:border-box;
+}
+.profile-card{
+    width:90%;
+    max-width: 500px;
+    padding: 20px;
+    margin:auto ;
+
+   
+}
+h1{
+    font-size: 3rem;
+}
