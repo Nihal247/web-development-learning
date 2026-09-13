@@ -1,0 +1,39 @@
+*{
+box-sizing:border-box;
+}
+.profile-card{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    width:90%;
+    max-width: 500px;
+    padding: 20px;
+    margin:auto ;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid black;
+
+   
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman',serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: darkblue;
+}
+.details{
+    line-height: 1.5;
+
+}
+.bio{
+    letter-spacing: 2px;
+}
+button{
+    border-radius: 10px;
+    color: darkred;
+    background-color:rgba(255,255,0,0.3);
+}
