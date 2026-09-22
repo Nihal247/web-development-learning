@@ -1,0 +1,10 @@
+button:hover{
+    background-color: black;
+    color: white;
+}
+button:nth-child(2){
+border:2px solid red;
+}
+button::after{
+    content:" →";
+}
