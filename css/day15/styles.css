@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+background-color: antiquewhite;
+padding: 20px;
+
+}
+input,textarea,select{
+    width: 100%;
+    padding: 12px;
+    border:2px solid lightgray;
+    border-radius: 5px;
+
+}
+input:focus,
+textarea:focus,
+select:focus{
+    border-color: blue;
+
+}
+button{
+    cursor: pointer;
+}
