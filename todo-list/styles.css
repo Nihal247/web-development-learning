@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: #172554;
+    background:linear-gradient(135deg, #F5F3FF, #EEF2FF, #FCE7F3);
+    min-height: 100vh;
+    font-family: Inter,sans-serif;
+
+
+}
+main{
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 28px;
+    box-shadow:0 20px 60px rgba(60, 45, 130, 0.10);
+}
+header{
+    text-align: center;
+    padding-top: 40px;
+    color:#172554 ;
+}
+header h1{
+    font-size: 36px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+header p{
+    font-size: 16px;
+    color:#64748B ;
+    margin-top: 0;
+}
+#task-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+
+
+}
+#task-form input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    font-size: 16px;
+
+}
+#task-form button{
+    padding: 14px 22px;
+    background:#7C3AED ;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+#task-form button:hover {
+    background: #6D28D9;
+    transition: background 0.2s ease;
+}
+#task-form label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+}
+nav{
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+nav button{
+    padding: 10px 10px ;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #475569;
+    cursor: pointer;
+}
+nav button[data-filter="all"] {
+    background: #7C3AED;
+    color: #FFFFFF;
+    border-color: #7C3AED;
+}
+#task-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+
+}
+#task-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #F8FAFC;
+    border-radius: 12px;
+}
+#task-summary{
+    margin-top: 20px;
+    color: #64748B;
+    font-size: 14px;
+}
+#clear-completed{
+    padding: 10px 16px;
+    background: #FFFFFF;
+    color: #64748B;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#clear-completed:hover {
+    background: #F1F5F9;
+}
