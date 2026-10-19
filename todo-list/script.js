@@ -19,7 +19,19 @@ const newTask = {
 };
 nextTaskId++;
 tasks.push(newTask);
-console.log(tasks);
+taskInput.value = "";
+displayTasks();
+
 })
 
 
+function displayTasks(){
+    taskList.innerHTML = "";
+
+    for(const task of tasks){
+        const li = document.createElement("li");
+li.textContent = task.text;
+taskList.appendChild(li);
+
+    }
+}
