@@ -1,0 +1,27 @@
+:root{
+
+
+
+
+
+--background-color:lightgray;
+--heading-color:brown;
+--paragraph-color:rgb(237, 4, 0);
+--button-background:green;
+--spacing:16px;
+}
+.card{
+background-color: var(--background-color);
+padding: var(--spacing);
+
+}
+h2{
+    color: var(--heading-color);
+
+}
+p{
+    color: var(--paragraph-color);
+}
+button{
+    background-color: var(--button-backround);
+}
