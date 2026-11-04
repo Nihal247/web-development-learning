@@ -1,13 +1,15 @@
 function JobCard({ title ,company, location}) {
-    function handleClick(){
-        alert("You clicked Apply Now!");
+    function handleClick(jobTitle){
+        alert(`You Selected${jobTitle}`);
     }
+    const isSaved = true;
   return (<div className="job-card">
   <h2>{title} 
     </h2>
     <p>{company}</p>
     <p>{location}</p>
-    <button onClick={handleClick}>Apply Now</button>
+    <p>{isSaved ? "saved" :"savejobs"}</p>
+<button onClick={() => handleClick(title)}>Apply Now</button>
   </div>
    
     
