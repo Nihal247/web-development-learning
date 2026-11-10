@@ -1,6 +1,8 @@
+import { useState } from "react";
 import './App.css'
 import JobCard from "./jobs";
 function App(){
+  const [savedJobs, setSavedJobs] = useState([]);
  const jobs = [
   {
     id: 1,
@@ -28,9 +30,10 @@ function App(){
   }
 ];
   return(<>
+  <h2>Saved Jobs: {savedJobs.length}</h2>
 
 {jobs.map(job => (
-  <JobCard key={job.id} title={job.title} company={job.company} location={job.location} />
+  <JobCard key={job.id}id={job.id} title={job.title} company={job.company} location={job.location} savedJobs={savedJobs} setSavedJobs={setSavedJobs}/>
 ))
 }</>)
 
