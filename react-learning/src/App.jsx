@@ -1,6 +1,8 @@
 import { useState } from "react";
+import NameInput from "./NameInput";
 import './App.css'
 import JobCard from "./jobs";
+import JobSearch from "./JobSearchForm";
 function App(){
   const [savedJobs, setSavedJobs] = useState([]);
  const jobs = [
@@ -35,7 +37,10 @@ function App(){
 {jobs.map(job => (
   <JobCard key={job.id}id={job.id} title={job.title} company={job.company} location={job.location} savedJobs={savedJobs} setSavedJobs={setSavedJobs}/>
 ))
-}</>)
+}
+<NameInput/>
+<JobSearch/>
+</>)
 
 }
 export default App
